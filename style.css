@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: sans-serif;
+}
+.continaer {
+  width: 80%;
+  margin: auto;
+  background-color: #f6f6f6;
+  padding: 10px;
+}
+.continaer .get-repos {
+  display: flex;
+}
+.get-repos input,
+.get-repos button {
+  height: 54px;
+  border: none;
+  border-radius: 10px;
+}
+.get-repos input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #eee;
+  font-size: 22px;
+}
+.get-repos input:focus {
+  border: 1px solid cadetblue;
+  outline: none;
+}
+.get-repos button {
+  width: 100px;
+  margin-left: 10px;
+  background-color: cadetblue;
+  color: white;
+  transition: 0.3s;
+  cursor: pointer;
+  font-weight: bold;
+}
+.get-repos button:hover,
+.show-repos .right a:hover {
+  background-color: white;
+  border: 1px solid cadetblue;
+  color: cadetblue;
+}
+.show-repos {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.show-repos .repo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+  background-color: white;
+  padding: 10px;
+}
+.repo:hover {
+  padding: 10px;
+  margin-left: 10px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent cadetblue;
+}
+.right {
+  flex-basis: 35%;
+  display: flex;
+  justify-content: flex-end;
+}
+.show-repos .right a {
+  text-decoration: none;
+  background-color: cadetblue;
+  transition: 0.3s;
+}
+.show-repos .right span {
+  background-color: goldenrod;
+}
+.show-repos .right span,
+.show-repos .right a {
+  margin-right: 10px;
+  color: white;
+  width: 30%;
+  padding: 5px;
+  border-radius: 8px;
+  text-align: center;
+}
+@media (max-width: 778px) {
+  .continaer {
+    width: 100%;
+  }
+  .repo {
+    font-size: 14px;
+  }
+  .right {
+    flex-basis: 45%;
+  }
+  .show-repos .right span,
+  .show-repos .right a {
+    width: 50%;
+  }
+}
+.pf-info {
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.pf-img {
+  margin-right: 1rem;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
